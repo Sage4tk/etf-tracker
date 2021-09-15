@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    width: 100vw;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+thead {
+    background-color: grey;
+}
+
+th,td {
+    padding: 0.5rem 2rem;
+}
+
+.total {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: row;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+}
+
+.green {
+    color: rgb(0, 165, 0);
+}
+
+.red {
+    color: red;
+}
+
+table {
+    margin-bottom: 4rem;
+}
+
+.total {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.total div > h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.total div > p {
+    font-size: 1.2rem;
+}
+
+.total > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+p {
+    text-align: center;
+}
+
+.price {
+    margin-bottom: 4rem;
+}
+
+.price h2 {
+    margin-bottom: 1rem;
+}
+
+.price p {
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    th,td {
+        padding: 0.5rem 1rem
+    }
+
+    tr > *:first-child {
+        display: none;
+    }
+
+    .show {
+        flex-direction: column;
+    }
+}
