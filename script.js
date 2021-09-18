@@ -63,7 +63,7 @@ async function addTable() {
         }
 
         document.querySelector('#first').innerHTML = "$ " + sum.totalAmount;
-        document.querySelector('#second').innerHTML = "$ " + sum.afterRoi;
+        document.querySelector('#second').innerHTML = "$ " + sum.afterRoi.toFixed(2);
         document.querySelector('#third').innerHTML = (((sum.afterRoi - sum.totalAmount) / sum.totalAmount) * 100).toFixed(2) + " %"
         
         //etf price
